@@ -1,0 +1,26 @@
+version: "2.1"
+services:    
+  api:
+    extends:
+      file: api/docker-compose.yml
+      service: api
+      
+  api-db:
+    extends:
+      file: api/docker-compose.yml
+      service: api-db
+
+  users:
+    extends:
+      file: users/docker-compose.dev.yml
+      service: users
+
+  users-db:
+    extends:
+      file: users/docker-compose.yml
+      service: users-db
+
+  webserver:
+    extends:
+      file: webserver/docker-compose.yml
+      service: webserver

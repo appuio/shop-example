@@ -1,0 +1,9 @@
+[submodule "users"]
+	path = users
+	url = https://github.com/appuio/shop-example-users
+[submodule "users-builder"]
+	path = users-builder
+	url = https://github.com/appuio/shop-example-users-builder
+[submodule "webserver"]
+	path = webserver
+	url = https://github.com/appuio/shop-example-webserver
