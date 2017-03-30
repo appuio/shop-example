@@ -7,3 +7,6 @@
 [submodule "webserver"]
 	path = webserver
 	url = https://github.com/appuio/shop-example-webserver
+[submodule "api"]
+	path = api
+	url = https://github.com/appuio/shop-example-api
