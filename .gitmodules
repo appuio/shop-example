@@ -10,3 +10,24 @@
 [submodule "api"]
 	path = api
 	url = https://github.com/appuio/shop-example-api
+[submodule "vagrant"]
+	path = vagrant
+	url = https://github.com/appuio/shop-example-vagrant.git
+[submodule "orders"]
+	path = orders
+	url = https://github.com/appuio/shop-example-orders.git
+[submodule "api-builder"]
+	path = api-builder
+	url = https://github.com/appuio/shop-example-api-builder.git
+[submodule "gitlab/runner-oc"]
+	path = gitlab/runner-oc
+	url = https://github.com/appuio/gitlab-runner-oc.git
+[submodule "gitlab/runner-sbt"]
+	path = gitlab/runner-sbt
+	url = https://github.com/appuio/gitlab-runner-sbt.git
+[submodule "jenkins/slave-python"]
+	path = jenkins/slave-python
+	url = https://github.com/appuio/jenkins-slave-python
+[submodule "jenkins/jenkins-s2i"]
+	path = jenkins/jenkins-s2i
+	url = https://github.com/appuio/shop-example-jenkins
