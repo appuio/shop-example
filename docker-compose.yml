@@ -9,10 +9,20 @@ services:
     extends:
       file: api/docker-compose.yml
       service: api-db
+  
+  orders:
+    extends:
+      file: orders/docker-compose.yml
+      service: orders
 
+  orders-db:
+    extends:
+      file: orders/docker-compose.yml
+      service: orders-db
+      
   users:
     extends:
-      file: users/docker-compose.dev.yml
+      file: users/docker-compose.yml
       service: users
 
   users-db:
