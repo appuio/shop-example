@@ -6,5 +6,5 @@ cd ../orders
 cd ../users
 ./start-build.sh
 cd ../webserver
-./webserver/start-build.sh
+./start-build.sh
 cd ..
