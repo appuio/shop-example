@@ -23,7 +23,7 @@ Switch to the *vagrant* directory and start up a new VM with `vagrant up`. This 
 Building the application images
 ------------------------------
 
-When using docker-compose, one can specify that Dockerfiles should be automatically built on `docker-compose up`. As some of our services (**API** and **orders**) are built using Source-To-Image, we need to build those with the S2I binary before running the application with Docker Compose. Furthermore, the **users** service needs to be compiled with the builder image and the **webserver** service needs to be bundled before being packaged with the Dockerfile.
+When using docker-compose, one can specify that Dockerfiles should be automatically built on running `docker-compose up --build`. However, as some of our services (**API** and **orders**) are built using Source-To-Image, we need to build those with the S2I binary before running the application with Docker Compose. Furthermore, the **users** service needs to be compiled with the builder image and the **webserver** service needs to be bundled before being packaged with the Dockerfile.
 
-To build all services at once, use the `start-build.sh` script we provided in the repository. Each service repository also contains a script that only builds that specific service.
+To build all services at once, use the `start-build.sh` script we provided in the repository. Each service repository contains a script that only builds that specific service.
 
