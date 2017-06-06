@@ -31,6 +31,8 @@ services:
       service: users-db
 
   webserver:
+    environment:
+      API_URL: http://172.28.128.4:9000
     extends:
       file: webserver/docker-compose.yml
       service: webserver

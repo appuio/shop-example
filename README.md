@@ -29,7 +29,7 @@ When using docker-compose, Dockerfiles can be automatically built when running t
 
 As such, to build all services at once, run the `start-build.sh` script provided in the root folder of the repository in your Vagrant VM. The script will prepare each service as necessary such that they can then be run with docker-compose. Additionally, each service repository contains a separate docker-compose file and a script that only builds that specific service (so you can only run one specific service at a time).
 
-After the build script finished successfully, the application can be run with `docker-compose up --build` and will then be exposed on port 80 of your virtual machine. To access it from outside the VM, find the IP address of your virtual machine and access it in your browser (using ifconfig, ipconfig or similar).
+After the build script finished successfully, you will need to find the IP address of your virtual machine (using ifconfig, ipconfig or similar). Update the IP address in the root `docker-compose.yml` such that the frontend knows where to reach the backend of the application. The application can now finally be run with `docker-compose up --build` and will be exposed on port 80 of your virtual machine. To access it from outside the VM, simply open the IP of your VM in any browser.
 
 
 
